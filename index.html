@@ -889,7 +889,7 @@ let counterInterval = null;
 function updateCounter() {
   const now = Date.now();
   let diff = now - START_DATE;
-[12/10/2026 06:15 ص] GOKU: /* إذا كان التاريخ لم يأتِ بعد نعرض الفرق بالمطلق حتى لا يظهر سالب */
+ /* إذا كان التاريخ لم يأتِ بعد نعرض الفرق بالمطلق حتى لا يظهر سالب */
   if (diff < 0) diff = Math.abs(diff);
 
   const totalSec = Math.floor(diff / 1000);
